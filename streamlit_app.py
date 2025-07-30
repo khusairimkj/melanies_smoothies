@@ -1,7 +1,7 @@
 # Import python packages
 import streamlit as st
 import requests
-import pandas as pd
+import pandas as pd_df
 #from snowflake.snowpark.context import get_active_session
 
 # Write directly to the app
