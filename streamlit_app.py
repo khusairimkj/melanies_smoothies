@@ -31,7 +31,8 @@ ingredients_list = st.multiselect('Chosse up to 5 ingredient :', my_dataframe, m
 
 import requests
 #smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-smoothiefroot_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+#smoothiefroot_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+smoothiefroot_response = requests.get("https://fruityvice.com/api/fruit/all")
 #st.text(smoothiefroot_response.json())
 sf_df = st.dataframe(data=smoothiefroot_response.json(),use_container_width=True)
 
