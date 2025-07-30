@@ -1,7 +1,7 @@
 # Import python packages
 import streamlit as st
 import requests
-import pandas as pd_df
+import pandas as pd
 #from snowflake.snowpark.context import get_active_session
 
 # Write directly to the app
@@ -30,7 +30,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 #st.dataframe(data=my_dataframe, use_container_width=True)
 #st.stop()
 
-pd_df.my_dataframe.to_pandas()
+pd_df=my_dataframe.to_pandas()
 #pd.dataframe(data=my_dataframe, use_container_width=True)
 st.my_dataframe(pd_df);
 st.stop()
